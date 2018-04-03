@@ -52,7 +52,11 @@ function gotStream(stream) {
     source.connect(meter);
 }
 
-navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+//navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+navigator.getUserMedia = navigator.getUserMedia ||
+                       navigator.webkitGetUserMedia ||
+                       navigator.mozGetUserMedia ||
+                       navigator.msGetUserMedia;
 navigator.getUserMedia( {audio:true}, gotStream, function (){console.warn("Error getting audio stream from getUserMedia")} );
 
 //javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()
