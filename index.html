@@ -1,21 +1,43 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
 
     <title> xyzequalizer by kesson </title>
 
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-    <style> body {padding: 0; margin: 0;} </style>
+    <style>
+        body {
+            font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.1/dat.gui.min.js"></script>
+        canvas {
+            vertical-align: top;
+        }
+    </style>
 
-    <script src="https://cdn.rawgit.com/cwilso/volume-meter/cc16b5ff/volume-meter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/91/three.min.js"></script>
-    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://threejs.org/examples/js/ImprovedNoise.js"></script>
-    <script src="./sketch/noiseSphere.js"></script>
+    <!-- import the webpage's javascript file -->
+    <!-- volume meter -->
+    <script src="js/volume-meter.js"></script>
+    <!-- three.js-->
+    <script src="js/three.js"></script>
+    <!-- orbit control, for the camera -->
+    <script src="js/OrbitControls.js"></script>
+    <!-- improved noise, perlin noise library -->
+    <script src="js/ImprovedNoise.js"></script>
+    
+    <!-- audio handler -->
+    <script src="js/audio.js" defer></script>
+    <!-- camera handler -->
+    <script src="js/camera.js" defer></script>
+    <!-- lights handler -->
+    <script src="js/lights.js" defer></script>
+    <!-- sphere handler -->
+    <script src="js/sphere.js" defer></script>
+    <!-- and, finally, the actual "main" script -->
+    <script src="js/script.js" defer></script>
 
 </head>
 
