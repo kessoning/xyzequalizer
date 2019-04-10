@@ -1,15 +1,15 @@
 // Variables
-var showred = false;
-var nx = 0;
-var ny = 0;
-var radius = 20;
-var showred = false;
-var cameratranslate = 5000;
-var randomcounter = 0;
-var rotSpeed = 2.0;
-var cameraz = 0;
-var extmultiplier = 1.3;
-var blackflash = false;
+let showred = false;
+let nx = 0;
+let ny = 0;
+let radius = 20;
+let showred = false;
+let cameratranslate = 5000;
+let randomcounter = 0;
+let rotSpeed = 2.0;
+let cameraz = 0;
+let extmultiplier = 1.3;
+let blackflash = false;
 
 // sensitivity
 var sensitivity = 10;
